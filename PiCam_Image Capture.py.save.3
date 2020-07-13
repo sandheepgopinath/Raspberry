@@ -14,6 +14,9 @@ camera.capture(rawCapture,format="bgr")
 image = rawCapture.array
 # display the image on screen and wait for a keypress
 cv2.imshow("Image", image)
+
+rot=cv2.getRotatinMatrix
+
 key=cv2.waitKey(0)
 
 if key==ord('s'):
